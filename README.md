@@ -10,4 +10,3 @@ git submodule add https://github.com/EloiStree/2026_08_10_gdp_omi_file_import ad
 
 You can find information on the file formats here:   
 [Manual](https://github.com/EloiStree/OpenMacroInput/tree/master/manual): https://github.com/EloiStree/OpenMacroInput/tree/master/manual   
-

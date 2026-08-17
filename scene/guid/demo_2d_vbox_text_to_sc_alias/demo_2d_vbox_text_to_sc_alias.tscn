@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://in7rnfnsb6ce"]
+
+[ext_resource type="Script" uid="uid://d0eo07oyjqtai" path="res://addons/2026_08_10_gdp_omi_file_import/scene/guid/demo_2d_vbox_text_to_sc_alias/omi_file_text_to_sc_alias.gd" id="1_580uu"]
+
+[node name="Demo2dVboxTextToScAlias" type="Control" unique_id=1449831987]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OmiFileParseTextToScAlias" type="Node" parent="." unique_id=562356899]
+script = ExtResource("1_580uu")
+metadata/_custom_type_script = "uid://d0eo07oyjqtai"
