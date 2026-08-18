@@ -34,3 +34,7 @@ func push_in_text_to_parse(text:String):
 	
 	
 	
+
+
+func _on__sc_alias_on_content_found_to_redirect(text: String) -> void:
+	pass # Replace with function body.
