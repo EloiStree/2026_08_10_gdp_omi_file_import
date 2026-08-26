@@ -1,14 +1,10 @@
-class_name OmiFileTextToGodotKeyboardToCmd
+class_name OmiFileGodotKeyboardToCmd
 extends  OmiFileTextAbstractGivenTextParser
-
-
 
 
 signal on_unicode_integer_trigger_found(unicode_id:int, trigger_action:String)
 signal on_unicode_integer_as_string_trigger_found(unicode_id:String, trigger_action:String)
-
 signal on_unicode_char_trigger_found(unicode_char:String, trigger_action:String)
-
 signal on_keyboard_key_enter_trigger_found(key_name:String, trigger_action:String)
 signal on_keyboard_key_exit_trigger_found(key_name:String, trigger_action:String)
 
@@ -26,7 +22,6 @@ func _process_given_text_to_parse(text:String) -> void:
 			var trigger_action = cells[1].strip_edges()
 			if key_name.is_empty() or trigger_action.is_empty():
 				continue
-			
 			on_keyboard_key_enter_trigger_found.emit(key_name, "bool:"+trigger_action+":true")
 			on_keyboard_key_exit_trigger_found.emit(key_name, "bool:"+trigger_action+":false")
 
