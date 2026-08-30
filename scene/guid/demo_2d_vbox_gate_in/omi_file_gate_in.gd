@@ -8,7 +8,7 @@ signal on_request_websocket_listener_as_client(ip_address_server:String, port:in
 signal on_request_folder_listener(folder_path:String)
 
 
-@export var _use_debug_prints:bool = true
+@export var _use_debug_prints:bool = false
 @export_multiline var _last_received_text:String = ""
 
 func push_in_text_to_parse(text:String):

@@ -8,7 +8,7 @@ signal on_request_ab_input_range_in_out_action(input_name:String, value_min:floa
 signal on_request_ab_input_boolean_action(input_name:String, value:bool, action:String)
 
 
-@export var _use_debug_print:bool = true
+@export var _use_debug_print:bool = false
 
 func push_in_text_to_parse(text:String):
 	var lines :PackedStringArray = text.split("\n")

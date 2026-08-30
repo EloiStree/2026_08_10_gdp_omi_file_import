@@ -21,7 +21,7 @@ func push_in_text_to_parse(text:String):
 			var value_bool:bool = value_str.contains("true")
 			if count==2:
 				on_request_boolean_set_command.emit(key, value_bool)
-				print (">>BOOL>>> key: ", key, " value: ", value_bool)
+				#print (">>BOOL>>> key: ", key, " value: ", value_bool)
 			elif count==3:
 				var command:String = parts[2].strip_edges()
 				if value_bool:
@@ -29,7 +29,7 @@ func push_in_text_to_parse(text:String):
 				else:
 					on_request_append_command_for_key_on_false.emit(key, command)
 				on_request_append_key_value_command.emit(key, value_bool, command)
-				print(">>BOOL CMD>>> key|", key, "| value|", value_bool, "| command|", command)
+				#print(">>BOOL CMD>>> key|", key, "| value|", value_bool, "| command|", command)
 
 
 

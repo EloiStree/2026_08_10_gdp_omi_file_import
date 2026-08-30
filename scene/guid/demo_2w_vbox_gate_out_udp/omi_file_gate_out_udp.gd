@@ -8,7 +8,7 @@ signal on_request_alias_udp_pusher_for_bytes(alias:String, ip_address_target:Str
 signal on_request_alias_udp_pusher_for_text(alias:String, ip_address_target:String, port:int)
 
 
-@export var _use_debug_prints:bool = true
+@export var _use_debug_prints:bool = false
 @export_multiline var _last_received_text:String = ""
 
 	
